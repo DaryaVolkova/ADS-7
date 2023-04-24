@@ -4,15 +4,16 @@
 #define INCLUDE_TPQUEUE_H_
 
 struct SYM {
-	char ch;
-	int prior;
-	struct SYM* next;
+    char ch;
+    int prior;
+    struct SYM* next;
 };
 
 template<typename T>
 class TPQueue {
  private:
     T* head = nullptr;
+
  public:
     bool isEmpty() const {
         return !head;
